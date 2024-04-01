@@ -1,18 +1,24 @@
 import TweetAction from "../TweetAction";
-import reply from "../../../assets/Icons/Reply.svg"
-import retweet from "../../../assets/Icons/Retweet.svg"
-import share from "../../../assets/Icons/Share.svg"
-import love from "../../../assets/Icons/Love.svg"
+import Reply from "../../../assets/customs/Reply";
+import Retweet from "../../../assets/customs/Retweet";
+import Love from "../../../assets/customs/Love";
+import Share from "../../../assets/customs/Share";
 
-export default function TweetActions (props){
-   
-    return (
-
-        <div className="flex justify-center items-center gap-20 text-gray-600 text-base">
-           <TweetAction action={props.actions.action1} image={reply}/>
-           <TweetAction action={props.actions.action2} image={retweet}/>
-           <TweetAction action={props.actions.action3} image={love}/>
-           <TweetAction action={props.actions.action4} image={share}/>
-        </div>
-    )
+export default function TweetActions(props) {
+  return (
+    <div className="flex justify-center items-center gap-20 text-gray-600 text-base">
+      <TweetAction action={props.actions.action1}>
+        <Reply />
+      </TweetAction>
+      <TweetAction action={props.actions.action2}>
+        <Retweet />
+      </TweetAction>
+      <TweetAction action={props.actions.action3}>
+        <Love />
+      </TweetAction>
+      <TweetAction action={props.actions.action4}>
+        <Share />
+      </TweetAction>
+    </div>
+  );
 }
