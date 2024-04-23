@@ -1,5 +1,5 @@
 import React from "react";
-import privname from "../assets/images/Profile-Photo.png";
+//import privname from "../assets/images/Profile-Photo.png";//
 
 /**
  * Sibebar Profile UI Component
@@ -8,20 +8,20 @@ import privname from "../assets/images/Profile-Photo.png";
  */
 const SidebarProfile = ({ profURl, privURL, morURL }) => {
   const imageStyle = {
-    height: "18px",
-    width: "18px",
+    height: "40px",
+    width: "60px",
   };
   return (
-    <div className="sidebar-profile flex flex-ai-c">
-      <img src={profURl} />
+    <div className="flex gap-2 w-full">
+      <img src="/Profile-Photo.png" style={imageStyle} />
       <div>
         <div className="flex">
-          Bradley Ortiz
-          <img src={privname} style={imageStyle} />
+          <span>Bradley Ortiz </span>
+          <img src="/Private.svg" alt="" />
         </div>
-        <div>@Bradley ...</div>
+        <span>@Bradley ...</span>
       </div>
-      <img src={morURL} />
+      <img src="/" alt="" />
     </div>
   );
 };

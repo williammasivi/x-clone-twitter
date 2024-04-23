@@ -12,7 +12,7 @@ import Button from "./composants/TweetEditor/TweetEditorForm/button";
 
 export default function SideBar() {
   return (
-    <div className="flex flex-col justify-between sticky top-0 h-screen   p-4 pl-8 w-[300px]">
+    <div className="flex flex-col justify-between sticky top-0 h-screen p-4 pl-8 w-[300px]">
       <div className="">
         <InconSid />
         <HomeInc />

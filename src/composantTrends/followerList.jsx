@@ -1,7 +1,7 @@
-import FolL from "../assets/imageSide/Follow-Lİsts.png"
-
 export default function Follower() {
-    return <div className="mt-5">
-        <img src={FolL} alt="" className="w-full" />
+  return (
+    <div className="mt-5">
+      <img src="/Follow-Lİsts.png" alt="" className="w-full" />
     </div>
+  );
 }

@@ -4,7 +4,7 @@ import TweetTitleDetails from "../../TweetTitleDetails";
 export default function TweetTitle(props) {
   return (
     <div className="flex justify-start items-start gap-10 font-normal text-base">
-      <TweetTitleAuthor author={props.title.author} />
+      <TweetTitleAuthor author={props.title?.author} />
       <svg
         width="24"
         height="24"
@@ -18,9 +18,9 @@ export default function TweetTitle(props) {
           fill="#D9D9D9"
         />
       </svg>
-      <TweetTitleDetails details={props.title.details} />
-      <TweetTitleDetails details={props.title.details2} />
-      <TweetTitleDetails details={props.title.details3} />
+      <TweetTitleDetails details={props.title?.details} />
+      <TweetTitleDetails details={props.title?.details2} />
+      <TweetTitleDetails details={props.title?.details3} />
     </div>
   );
 }

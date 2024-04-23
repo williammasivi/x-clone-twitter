@@ -1,6 +1,6 @@
 export default function TopTweets({ img }) {
   return (
-    <div className="w-6 h-auto">
+    <div className="h-auto w-6">
       <img src={img} />
     </div>
   );

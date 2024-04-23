@@ -1,13 +1,11 @@
 export default function TweetEditorAction() {
   return (
-    <>
-      <div className="flex items-center justify-start gap-4" src="...">
-        <img src="src/assets/Media.svg" alt="" />
-        <img src="src/assets/Gif.svg" alt="" />
-        <img src="src/assets/Poll.svg" alt="" />
-        <img src="src/assets/Emoji.svg" alt="" />
-        <img src="src/assets/Schedule.svg" alt="" />
-      </div>
-    </>
+    <div className="flex gap-4 hover:cursor-pointer" src="...">
+      <img src="/Media.svg" alt="" />
+      <img src="/Gif.svg" alt="" />
+      <img src="/Poll.svg" alt="" />
+      <img src="/Emoji.svg" alt="" />
+      <img src="/Schedule.svg" alt="" />
+    </div>
   );
 }
